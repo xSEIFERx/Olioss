@@ -1,0 +1,75 @@
+h1 {
+    font-family: "LatoThin";
+    font-size: 220px;
+    margin-bottom: 0;
+    z-index: 5;
+    position: relative;
+};
+
+h2 {
+    font-family: "LatoLight";
+    font-size: 36px;
+};
+
+h3 {
+    font-family: "LatoBlack";
+    font-size: 400px;
+    opacity: 2%;
+}
+
+.unselectable {
+    user-select: none;  
+    cursor: default;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    //.container__bg-text
+    &__bg-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+        margin-left: 2%;
+    }
+    // .container__view-button
+    
+    &__view-button {
+    font-family: "LatoBlack";
+    font-size: 18px;
+    background-color: #0023ff;
+    color: white;
+    padding: 14px 54px;
+    border-radius: 30px 30px;
+    }
+
+    //.container__view-button-wrap
+
+    &__view-button-wrap {
+    margin-top: 40px;
+    position: relative;
+    z-index: 5;
+    }
+    
+    &__bg-button {
+        width: 200px;
+        z-index: 15;
+        position: absolute;
+        bottom: 0;
+        right: 320px;
+        margin-bottom: 80px;
+        //margin-right: 330px;
+
+        & input {
+            margin-right: 25px;
+            transform: scale(0.8);
+            
+        }
+    }
+}

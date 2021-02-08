@@ -1,0 +1,84 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+};
+//<подключаемые шрифты>
+@import "fonts";
+
+//</подключаемые шрифты>
+
+//<шрифт по умолчанию>
+$fontFamily: "Roboto";
+//</шрифт по умолчанию>
+
+//<Переменные>
+$minWidth: 320px;
+$maxWidth: 1400;
+$maxWidthContainer: 1180;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md3: 479.98;
+//</Переменные>
+
+//<Обнуление, общие параметры>
+@import "null";
+body {
+    color: #000;
+    font-size: 14px;
+    &._lock{
+        overflow: hidden;
+    }
+}
+//</Обнуление, общие параметры>
+
+//<Оболочка>
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &_bg-1 {
+        background-image: url('../img/main-bg-img.jpg');
+    }
+    
+    &_bg-2 {
+        background-image: url('../img/bg-2.jpg');
+    }
+
+    &_bg-3 {
+        background-image: url('../img/bg-3.jpg');
+    }
+
+    &_bg-4 {
+        background-image: url('../img/bg-4.jpg');
+    }
+}
+//</Оболочка>
+
+//<Основная сетка>
+._container {
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    padding: 0px 20px;
+
+}
+//</Основная сетка>
+
+//<подключаемые стили>
+@import "main_page_content";
+@import "left_column";
+@import "burger";
+@import "categories_page_content"
+//</подключаемые стили>
+
