@@ -701,9 +701,42 @@ h3 {
   font-size: 18px;
   color: #0023ff;
 }
+
+.search-wrapper {
+  background-image: url(/img/main-bg-img.jpg);
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+}
+
+.search__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.search__input {
+  border: none;
+  border-bottom: 1px solid #e3e3e3;
+  outline: none;
+  height: 140px;
+  margin-left: 15%;
+  margin-top: 20%;
+  font-family: "Lato-Thin";
+  font-size: 140px;
+}
 @supports (-webkit-appearance:none){
 .wrapper_bg-1{background-image:url("../img/main-bg-img.webp")}
 .wrapper_bg-2{background-image:url("../img/bg-2.webp")}
 .wrapper_bg-3{background-image:url("../img/bg-3.webp")}
 .wrapper_bg-4{background-image:url("../img/bg-4.webp")}
+.search-wrapper{background-image:url(/img/main-bg-img.webp)}
 }

@@ -1,0 +1,31 @@
+.search {
+    &-wrapper {
+        background-image: url(/img/main-bg-img.jpg);
+        background-position: bottom;
+        height: 100%;
+        width: 100%;
+
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        opacity: 0.9;
+        
+
+    }
+    
+    &__input {
+        border: none;
+        border-bottom: 1px solid #e3e3e3;
+        outline: none;
+        height: 140px;
+        margin-left: 15%;
+        margin-top: 20%;
+        font-family: "Lato-Thin";
+        font-size: 140px;
+    }
+}
+
