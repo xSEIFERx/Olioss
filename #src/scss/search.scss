@@ -1,31 +1,86 @@
 .search {
     &-wrapper {
-        background-image: url(/img/main-bg-img.jpg);
-        background-position: bottom;
         height: 100%;
         width: 100%;
+        position: relative;
+
+        &::after {
+            content: "";
+            background-image: url(/img/main-bg-img.jpg);
+            opacity: 0.08;
+            position: absolute;
+            z-index: -1;
+            top: -190px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-size: cover;
+        }
 
     }
-    &__container {
+    &-container {
         display: flex;
         flex-direction: column;
         height: 100%;
         width: 100%;
-        background-color: white;
-        opacity: 0.9;
         
+        &__input {
+            border: none;
+            border-bottom: 3px solid #e3e3e3;
+            outline: none;
+            height: 140px;
+            margin-left: 15%;
+            margin-top: 3%;
+            font-family: "Lato-Thin";
+            font-size: 140px;
+            width: 60%;
+            
+            &::-webkit-search-cancel-button {
+                -webkit-appearance: searchfield-cancel-button;
+            }
+        }
 
+        &__advice {
+            margin-left: 15%;
+            margin-top: 4%;
+        
+            & p {
+                font-size: 36px;
+                font-family: "Lato-Light";
+                color: #e3e3e3;
+            }
+        }
+
+        &__result {
+            display: flex;
+            flex-direction: row;
+            margin-left: 15%;
+            margin-top: 2%;
+        }
+    }
+}
+
+.result-container {
+    &__item {
+        display: flex;
+        flex-direction: row;
+        font-size: 72px;
+        font-family: "Lato_Light";
+        align-items: center;
+        justify-content: space-between;
+        width: 600px;
+        transform: scale(0.6);
+        margin-left: -5%;
+    }
+    &__item:last-child {
+        width: 700px;
     }
     
-    &__input {
-        border: none;
-        border-bottom: 1px solid #e3e3e3;
-        outline: none;
-        height: 140px;
+    &__text {
         margin-left: 15%;
-        margin-top: 20%;
-        font-family: "Lato-Thin";
-        font-size: 140px;
+        font-size: 30px;
+        font-family: "Lato-Bold";
+        margin-top: 7%;
     }
 }
 
