@@ -81,5 +81,24 @@ body {
 @import "burger";
 @import "categories_page_content";
 @import "search";
+@import "product_content";
 //</подключаемые стили>
 
+//<переменные>
+
+
+//</переменные>
+
+.price {
+    font-size: 48px;
+    font-family: "Lato-Bold";
+    color: blue;
+}
+
+.old-price {
+    font-size: 24px;
+    font-family: "Lato-Bold";
+    color: #000;
+    text-decoration: line-through;
+    margin-left: 16px;
+}

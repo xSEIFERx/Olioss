@@ -54,7 +54,7 @@
         &__result {
             display: flex;
             flex-direction: row;
-            margin-left: 15%;
+            margin-left: 11%;
             margin-top: 2%;
         }
     }
@@ -72,6 +72,7 @@
         transform: scale(0.6);
         margin-left: -5%;
     }
+
     &__item:last-child {
         width: 700px;
     }
